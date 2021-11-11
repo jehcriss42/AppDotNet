@@ -8,6 +8,7 @@ namespace DIO.Series
     {
         static SerieRepositorio repositorioSerie = new SerieRepositorio();
 	static FilmeRepositorio repositorioFilme = new FilmeRepositorio();
+	    
 	static void Main()
         {
 			string selecionafilmeOuSerie = SelecionarFilmeOuSerie();
@@ -102,7 +103,7 @@ namespace DIO.Series
 			}
 		}
 	    
-		private static void Atualizar(string filmeOuSerie)
+	private static void Atualizar(string filmeOuSerie)
 		{
 			Console.Write($"Digite o id correspondente - {filmeOuSerie}: ");
 			int indice = int.Parse(Console.ReadLine());
@@ -155,7 +156,7 @@ namespace DIO.Series
 			}
 		}
 	    
-        private static void Listar(string filmeOuSerie)
+        	private static void Listar(string filmeOuSerie)
 		{
 			Console.WriteLine($"Listar {filmeOuSerie}");
 
